@@ -11,13 +11,25 @@ var blocoDeCor = document.querySelector('#cor');
 
 
 function start(){
-    redRange.addEventListener('input', mudandoValorInputRed)
+    redRange.addEventListener('input', mudandoValorInputRed);
+    greenRange.addEventListener('input', mudandoValorInputGreen);
+    blueRange.addEventListener('input', mudandoValorInputBlue);
 }
 
 function mudandoValorInputRed(event){
-   var valorAtual = event.target.value;
-    textRed.value = valorAtual;
+   var valorAtualRed = event.target.value;
+    textRed.value = valorAtualRed;
 }
+
+function mudandoValorInputGreen(event){
+    var valorAtualGreen = event.target.value;
+    textGreen.value = valorAtualGreen;
+}
+function mudandoValorInputBlue(event){
+    var valorAtualBlue = event.target.value;
+    textBlue.value = valorAtualBlue;
+}
+
 
 start();
 
