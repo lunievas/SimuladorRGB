@@ -8,7 +8,9 @@ var textGreen = document.querySelector('#valorGreen');
 var textBlue = document.querySelector('#valorBlue');
 var blocoDeCor = document.querySelector('#cor');
 
+var rgb = 'rgb(' +redRange.value + ', ' + greenRange.value + ', ' + blueRange.value + ')';
 
+blocoDeCor.style.backgroundColor = rgb;
 
 function start(){
     redRange.addEventListener('input', mudandoValorInputRed);
@@ -17,7 +19,7 @@ function start(){
 }
 
 function mudandoValorInputRed(event){
-   var valorAtualRed = event.target.value;
+    var valorAtualRed = event.target.value;
     textRed.value = valorAtualRed;
 }
 
@@ -30,8 +32,19 @@ function mudandoValorInputBlue(event){
     textBlue.value = valorAtualBlue;
 }
 
+function mudandoCor(){
+
+    
+var rgb = 'rgb(' +redRange.value + ', ' + greenRange.value + ', ' + blueRange.value + ')';
+
+blocoDeCor.style.backgroundColor = rgb;
+    
+    
+    
+  
+}
 
 start();
-
+mudandoCor();
 
 
